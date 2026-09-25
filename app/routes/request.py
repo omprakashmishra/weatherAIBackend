@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
-from app.services.llm_service import fact_check
+from app.routes.llm_service import fact_check
 
 router = APIRouter()
 
@@ -20,9 +20,9 @@ def get_weather(city: str):
 
 
 @router.post("/fact-check")
-def fact_check_endpoint(claim: str):
+def fact_check_endpoint(payload: FactCheckRequest):
     try:
-        result = fact_check(claim)
+        result = fact_check(payload.claim)
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
