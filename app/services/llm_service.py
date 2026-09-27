@@ -1,12 +1,12 @@
 import os
 import json
+
 from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv("app/routes/.env")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
 
 SYSTEM_PROMPT = (
     "You are a strict fact-checker. Reply ONLY with valid JSON in this exact shape:\n"
