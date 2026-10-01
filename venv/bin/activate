@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/ces/AIBE/weatherAIBackend/venv"
+VIRTUAL_ENV="/Users/CES/H5-Project/weatherAIBackend/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

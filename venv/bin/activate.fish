@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/ces/AIBE/weatherAIBackend/venv"
+set -gx VIRTUAL_ENV "/Users/CES/H5-Project/weatherAIBackend/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
